@@ -6,3 +6,10 @@
   %script(src='js/jquery-1.7.2.min.js')
   %script(src='js/bootstrap.min.js')
  = yield
+ :javascript
+  $(function(){
+   $('table').addClass('table');
+   $('form').attr('method', 'post');
+   $('button').addClass('btn');
+  });
+
